@@ -1,0 +1,41 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "CRUD api",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:build": "cross-env NODE_ENV=production tsc -p tsconfig.json && node dist/src/index.js",
+    "start:dev": "cross-env NODE_ENV=development nodemon src/index.ts",
+    "start:multi": "cross-env NODE_ENV=multi nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhelina-zhurauliova/CRUD-api.git"
+  },
+  "author": "Anhelina Zhurauliova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anhelina-zhurauliova/CRUD-api/issues"
+  },
+  "homepage": "https://github.com/anhelina-zhurauliova/CRUD-api#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "~5.26",
+    "@typescript-eslint/parser": "~5.26",
+    "eslint": "~8.16",
+    "eslint-config-prettier": "~8.5",
+    "eslint-plugin-jest": "~26.2",
+    "jest": "~28.1",
+    "nodemon": "^2.0.16",
+    "prettier": "~2.6",
+    "ts-jest": "~28.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
